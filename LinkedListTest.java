@@ -33,7 +33,6 @@ public class LinkedListTest {
 						 myLinkedList.tail.equals(myFirstNode);
 		Assert.assertTrue(result);
 	}
-	
 	// Given 3 numbers when appended should be aAdded to last
 	@Test
 	public void given3NumbersWhenAppendedShouldBeAddedToLast() {
@@ -48,6 +47,7 @@ public class LinkedListTest {
 		boolean result = myLinkedList.head.equals(myFirstNode) && 
 						 myLinkedList.head.getNext().equals(mySecondNode) &&
 						 myLinkedList.tail.equals(myThirdNode);
+
 		Assert.assertTrue(result);
 	}
 	
@@ -64,6 +64,10 @@ public class LinkedListTest {
 		boolean result = myLinkedList.head.equals(myFirstNode) && 
 				 		 myLinkedList.head.getNext().equals(mySecondNode) &&
 				 		 myLinkedList.tail.equals(myThirdNode);
+
+		boolean result = myLinkedList.head.equals(myThirdNode) && myLinkedList.head.getNext().equals(mySecondNode)
+				&& myLinkedList.tail.equals(myFirstNode);
+
 		Assert.assertTrue(result);
 	}
 }
