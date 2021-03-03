@@ -22,6 +22,7 @@ public class MyLinkedList {
 			this.head.setNext(tempNode);
 		}
 	}
+
 	
 	public void append(INode myNode) {
 		if(this.head == null) {
@@ -34,6 +35,7 @@ public class MyLinkedList {
 			this.tail = myNode;
 		}
 	}
+
 
 
 	public void printMyNode() {

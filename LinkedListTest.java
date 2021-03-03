@@ -48,6 +48,9 @@ public class LinkedListTest {
 		boolean result = myLinkedList.head.equals(myFirstNode) && 
 						 myLinkedList.head.getNext().equals(mySecondNode) &&
 						 myLinkedList.tail.equals(myThirdNode);
+		boolean result = myLinkedList.head.equals(myThirdNode) && myLinkedList.head.getNext().equals(mySecondNode)
+				&& myLinkedList.tail.equals(myFirstNode);
+
 		Assert.assertTrue(result);
 	}
 }
